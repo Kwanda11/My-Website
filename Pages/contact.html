@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Defines the character encoding and ensures the page is responsive on different devices. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the title displayed in the browser tab. -->
     <title>Student Success Hub | Contact</title>
-   
 </head>
 
 <body>
 
+    <!-- Header containing the main navigation menu for accessing the website pages. -->
     <header>
         <nav>
             <h1>Student Success Hub</h1>
 
+            <!-- Navigation links connecting the contact page to the other website pages. -->
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -25,54 +30,71 @@
         </nav>
     </header>
 
+    <!-- Main content containing contact information and the contact form. -->
     <main>
 
+        <!-- Page introduction explaining the purpose of the contact page. -->
         <section class="page-header">
             <h2>Contact Us</h2>
             <p>We are here to assist you.</p>
         </section>
 
+        <!-- Section providing contact information and allowing users to send a message. -->
         <section class="content-section">
 
             <h2>Get In Touch</h2>
 
+            <!-- Explains why students may need to contact Student Success Hub. -->
             <p>
                 If you need more information about our resources
                 or have a general question, you can contact
                 Student Success Hub using the information below.
             </p>
 
+            <!-- Container grouping the available contact details together. -->
             <div class="contact-info">
 
+                <!-- Displays the website's email contact information. -->
                 <h3>Email</h3>
                 <p>info@studentsuccesshub.co.za</p>
 
+                <!-- Displays the website's telephone contact information. -->
                 <h3>Phone</h3>
                 <p>+27 12 345 6789</p>
 
+                <!-- Displays the hours during which the service is available. -->
                 <h3>Operating Hours</h3>
                 <p>Monday - Friday: 08:00 - 17:00</p>
 
             </div>
+
+            <!-- Contact form allowing users to submit their details and message. -->
             <h2>Contact Form</h2>
 
- <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+            <form>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+                <!-- Required text field for collecting the user's name. -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+                <!-- Required email field for collecting a valid email address. -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-    <button type="submit">Submit</button>
- </form>
+                <!-- Required text area for allowing the user to enter their message. -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- Button used to submit the completed contact form. -->
+                <button type="submit">Submit</button>
+
+            </form>
 
         </section>
 
     </main>
 
+    <!-- Footer containing the website copyright information. -->
     <footer>
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>
