@@ -41,6 +41,21 @@ The website contains the following pages:
 | Academic Calendar | Provides information about important academic activities and dates. |
 | FAQ | Provides answers to frequently asked questions. |
 
+
+# Responsive Design Testing
+
+The website was tested at desktop, tablet, and mobile screen sizes using Microsoft Edge Developer Tools.
+
+### Desktop View
+![Desktop View](screenshots/desktop.png)
+
+### Tablet View
+![Tablet View](screenshots/tablet.png)
+
+### Mobile View
+![Mobile View](screenshots/mobile.png)
+
+
 ---
 
 # Technologies Used
@@ -263,7 +278,7 @@ The aim is to make the website easier for different users to navigate and unders
 Testing
 The website was tested using browser Developer Tools.
 Testing included checking the website at different viewport sizes.
-The following testing sizes should be used when recording the final evidence:
+The following testing sizes were used when recording the final evidence:
 Device Type
 Example Width
 Purpose
@@ -291,7 +306,7 @@ Responsive card layouts.
 Mobile navigation.
 Horizontal scrolling of tables.
 Different screen sizes.
-Screenshots of the responsive testing will be added as evidence for Part 2.
+Screenshots of the responsive testing are included above as evidence for Part 2.
 GitHub Development
 GitHub was used to store the project and track development.
 Descriptive commits should be used to show the development process.
@@ -379,8 +394,10 @@ World Wide Web Consortium (W3C). (n.d.). Web Accessibility Initiative (WAI). Ava
 World Wide Web Consortium (W3C). (n.d.). Web Content Accessibility Guidelines (WCAG). Available at: https://www.w3.org/WAI/standards-guidelines/wcag/⁠�
 GitHub Repository
 GitHub Repository:
-[Insert your GitHub repository link here]
+https://github.com/Kwanda11/My-Website
 Conclusion
 Student Success Hub was developed to provide students with a simple and organised platform for accessing academic and learning information.
 Part 2 focused on improving the website based on Part 1 feedback, implementing an external CSS stylesheet, improving the visual design, adding responsive layouts and documenting the development process.
 The website is designed to provide a consistent experience across desktop, tablet and mobile screen sizes.
+
+
