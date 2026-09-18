@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-    <!-- Defines the character encoding and ensures the page is responsive on different devices. -->
+    <!-- Defines the character encoding and viewport for responsive design. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Sets the title displayed in the browser tab. -->
-    <title>Student Success Hub | Study Resources</title>
+    <title>Student Success Hub | Web Development Resources</title>
+
+    <!-- Links the shared external stylesheet. -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- Header containing the main navigation menu for accessing the website pages. -->
+    <!-- Header containing the main navigation menu. -->
     <header>
         <nav>
             <h1>Student Success Hub</h1>
 
-            <!-- Navigation links connecting the study resources page to the other website pages. -->
+            <!-- Navigation links connecting this page to the other pages. -->
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,131 +33,195 @@
         </nav>
     </header>
 
-    <!-- Main content containing the different study resources available to students. -->
+    <!-- Main content containing web development resources. -->
     <main>
 
-        <!-- Page introduction explaining the purpose of the study resources section. -->
+        <!-- Page header introducing the resources. -->
         <section class="page-header">
-            <h2>Study Resources</h2>
-            <p>Resources to help you study smarter.</p>
+
+            <h2>Web Development Resources</h2>
+
+            <p>
+                Resources to support students who are learning
+                the foundations of web development.
+            </p>
+
         </section>
 
-        <!-- Feature section containing individual cards for different study resources. -->
+        <!-- Supporting image for web development learning. -->
+        <img
+            src="../images/Digital.jpg"
+            srcset="
+                ../images/Digital.jpg 600w,
+                ../images/Digital.jpg 1200w
+            "
+            sizes="(max-width: 600px) 94vw, 92vw"
+            alt="Digital learning and technology"
+            class="hero-image">
+
+        <!-- Introduction to web development. -->
+        <section class="content-section">
+
+            <h2>Introduction to Web Development</h2>
+
+            <p>
+                Web development involves creating and maintaining websites
+                and web applications. Students can begin by learning the
+                structure of web pages before progressing to styling,
+                interactivity and responsive design.
+            </p>
+
+            <p>
+                The resources below introduce some of the main topics
+                that students should understand when learning web
+                development.
+            </p>
+
+        </section>
+
+        <!-- Main web development topics. -->
         <section class="features">
 
-            <!-- Card providing access to programming-related study resources. -->
-            <div class="card">
-                <h3>Programming</h3>
-                <p>
-                    Study programming concepts, coding techniques
-                    and useful programming resources.
-                </p>
-                <a href="programming.html">View Programming Resources</a>
-            </div>
+            <!-- HTML resource card. -->
+            <article class="card">
 
-            <!-- Card providing access to web development learning resources. -->
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>
-                    Learn about HTML, CSS and JavaScript and
-                    improve your web development skills.
-                </p>
-                <a href="web-development.html">View Web Development Resources</a>
-            </div>
+                <h3>HTML</h3>
 
-            <!-- Card providing business-related study information and resources. -->
-            <div class="card">
-                <h3>Business</h3>
                 <p>
-                    Access useful business-related study information
-                    and learning resources.
+                    HTML is used to structure the content of a web page.
+                    Students can learn about headings, paragraphs, links,
+                    images, lists, tables, forms and semantic elements.
                 </p>
+
+            </article>
+
+            <!-- CSS resource card. -->
+            <article class="card">
+
+                <h3>CSS</h3>
+
+                <p>
+                    CSS is used to style web pages. It can control
+                    colours, typography, spacing, layouts, borders,
+                    backgrounds and responsive designs.
+                </p>
+
+            </article>
+
+            <!-- JavaScript resource card. -->
+            <article class="card">
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    JavaScript can be used to add interactive behaviour
+                    and dynamic functionality to websites.
+                </p>
+
+            </article>
+
+            <!-- Responsive design resource card. -->
+            <article class="card">
+
+                <h3>Responsive Web Design</h3>
+
+                <p>
+                    Responsive design allows websites to adapt to
+                    different screen sizes such as desktop computers,
+                    tablets and mobile phones.
+                </p>
+
+            </article>
+
+            <!-- Accessibility resource card. -->
+            <article class="card">
+
+                <h3>Website Accessibility</h3>
+
+                <p>
+                    Accessibility involves designing websites so that
+                    they can be used by people with different abilities
+                    and ways of interacting with technology.
+                </p>
+
+            </article>
+
+            <!-- Practice resource card. -->
+            <article class="card">
+
+                <h3>Web Development Practice</h3>
+
+                <p>
+                    Practising by creating small web pages can help
+                    students understand how HTML and CSS work together.
+                </p>
+
+            </article>
+
+            <!-- Business resources card. -->
+            <article class="card">
+
+                <h3>Business Resources</h3>
+
+                <p>
+                    Explore resources covering business information systems,
+                    communication, management and business processes.
+                </p>
+
                 <a href="business.html">View Business Resources</a>
-            </div>
 
-            <!-- Card providing general study guides for reviewing important topics. -->
-            <div class="card">
-                <h3>Study Guides</h3>
-                <p>
-                    Use study guides to review important topics
-                    and prepare for assessments.
-                </p>
-            </div>
+            </article>
 
-            <!-- Card providing access to important lecture notes. -->
-            <div class="card">
-                <h3>Lecture Notes</h3>
-                <p>
-                    Keep your learning organised by reviewing
-                    important notes from your classes.
-                </p>
-            </div>
+            <!-- Programming resources card. -->
+            <article class="card">
 
-            <!-- Card explaining how students can use assignment guidelines. -->
-            <div class="card">
-                <h3>Assignment Guidelines</h3>
-                <p>
-                    Follow useful guidelines to help plan,
-                    structure and complete assignments.
-                </p>
-            </div>
+                <h3>Programming Resources</h3>
 
-            <!-- Card containing a downloadable PDF study resource for offline use. -->
-            <div class="card">
-                <h3>Downloadable Notes</h3>
                 <p>
-                    Download study material for offline use.
+                    Explore programming topics including variables, loops,
+                    arrays, methods and decision structures.
                 </p>
 
-                <!-- The download attribute allows the linked PDF to be downloaded by the user. -->
-                <a href="../downloads/study-notes.pdf" download>
-                    Download Study Notes
-                </a>
-            </div>
+                <a href="programming.html">View Programming Resources</a>
 
-            <!-- Card containing an external educational resource. -->
-            <div class="card">
-                <h3>Useful Learning Links</h3>
-                <p>
-                    Explore useful educational websites and
-                    learning resources.
-                </p>
+            </article>
 
-                <!-- Opens the external learning resource in a new browser tab. -->
-                <a href="https://www.w3schools.com/" target="_blank">
-                    Visit Learning Resource
-                </a>
-            </div>
+        </section>
 
-            <!-- Card linking students to the academic calendar. -->
-            <div class="card">
-                <h3>Academic Calendar</h3>
-                <p>
-                    View important academic dates and events.
-                </p>
-                <a href="academic-calendar.html">
-                    View Academic Calendar
-                </a>
-            </div>
+        <!-- Study tips section. -->
+        <section class="content-section">
 
-            <!-- Card linking students to frequently asked questions. -->
-            <div class="card">
-                <h3>FAQ</h3>
-                <p>
-                    Find answers to frequently asked questions
-                    about studying and using Student Success Hub.
-                </p>
-                <a href="faq.html">View FAQ</a>
-            </div>
+            <h2>Study Tips for Web Development</h2>
+
+            <ol>
+                <li>Practise HTML structure regularly.</li>
+
+                <li>
+                    Use CSS to experiment with layouts and typography.
+                </li>
+
+                <li>
+                    Test websites at different screen sizes.
+                </li>
+
+                <li>
+                    Use browser developer tools to inspect your code.
+                </li>
+
+                <li>
+                    Keep your files organised using clear folder names.
+                </li>
+            </ol>
 
         </section>
 
     </main>
 
-    <!-- Footer containing the website copyright information. -->
+    <!-- Footer containing website copyright information. -->
     <footer>
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>

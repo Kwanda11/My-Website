@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-    <!-- Defines the character encoding and ensures the page is responsive on different devices. -->
+    <!-- Defines the character encoding and viewport for responsive design. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Sets the title displayed in the browser tab. -->
     <title>Student Success Hub | Academic Calendar</title>
+
+    <!-- Links the shared external stylesheet. -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- Header containing the main navigation menu for accessing the website pages. -->
+    <!-- Header containing the main navigation menu. -->
     <header>
         <nav>
             <h1>Student Success Hub</h1>
 
-            <!-- Navigation links connecting the calendar page to the other website pages. -->
+            <!-- Navigation links connecting the calendar page to the other pages. -->
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,48 +33,120 @@
         </nav>
     </header>
 
-    <!-- Main content containing the academic calendar information. -->
+    <!-- Main content containing academic calendar information. -->
     <main>
 
-        <!-- Image used to support the digital learning theme of the page. -->
-        <img src="../images/Digital.jpg" alt="Digital Learning" width="300" height="200">
+        <!-- Supporting image for the academic learning theme. -->
+        <img
+            src="../images/Digital.jpg"
+            srcset="
+                ../images/Digital.jpg 600w,
+                ../images/Digital.jpg 1200w
+            "
+            sizes="(max-width: 600px) 94vw, 92vw"
+            alt="Digital learning"
+            class="hero-image">
 
-        <!-- Hero section introducing the purpose of the academic calendar. -->
+        <!-- Hero section introducing the academic calendar. -->
         <section class="hero">
             <h2>Academic Calendar</h2>
+
             <p>
                 Keep track of important academic dates, assessments
                 and college events.
             </p>
         </section>
 
-        <!-- Section containing cards for different types of academic dates and events. -->
-        <section class="intro">
+        <!-- Section containing important academic information. -->
+        <section class="content-section">
+
             <h2>Important Academic Dates</h2>
 
-            <!-- Card providing information about assignment deadlines. -->
-            <div class="card">
+            <p>
+                Use the information below to help organise your academic
+                activities and prepare for important deadlines.
+            </p>
+
+            <!-- Responsive table containing academic activities. -->
+            <div class="table-container">
+
+                <table>
+                    <caption>
+                        Student Academic Activities
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Activity</th>
+                            <th scope="col">Purpose</th>
+                            <th scope="col">What Students Should Do</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Assignments</td>
+                            <td>Complete module assessment tasks.</td>
+                            <td>Check requirements and submit before the deadline.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tests</td>
+                            <td>Assess understanding of module content.</td>
+                            <td>Review study material and prepare in advance.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Examinations</td>
+                            <td>Evaluate knowledge and skills at the end of a module.</td>
+                            <td>Follow the examination timetable and prepare thoroughly.</td>
+                        </tr>
+
+                        <tr>
+                            <td>College Events</td>
+                            <td>Provide academic and student activities.</td>
+                            <td>Check college announcements for relevant events.</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Cards providing additional information. -->
+        <section class="features">
+
+            <article class="card">
                 <h3>Assignments</h3>
-                <p>Check your module requirements and assignment due dates.</p>
-            </div>
+                <p>
+                    Check your module requirements and assignment
+                    due dates.
+                </p>
+            </article>
 
-            <!-- Card providing information about upcoming tests and assessments. -->
-            <div class="card">
+            <article class="card">
                 <h3>Tests</h3>
-                <p>Keep track of upcoming tests and assessments.</p>
-            </div>
+                <p>
+                    Keep track of upcoming tests and assessments
+                    and prepare before the scheduled date.
+                </p>
+            </article>
 
-            <!-- Card providing information about academic and college events. -->
-            <div class="card">
+            <article class="card">
                 <h3>College Events</h3>
-                <p>Stay informed about important academic and college events.</p>
-            </div>
+                <p>
+                    Stay informed about important academic and
+                    college events.
+                </p>
+            </article>
 
         </section>
 
     </main>
 
-    <!-- Footer containing the website copyright information. -->
+    <!-- Footer containing website copyright information. -->
     <footer>
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>

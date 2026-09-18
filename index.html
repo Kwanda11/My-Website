@@ -1,52 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!--Defines the character encoding and viewport-->
+    <!-- Defines the character encoding and viewport for responsive design. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Page title displayed in the browser tab-->
+
+    <!-- Page title displayed in the browser tab. -->
     <title>Student Success Hub | Home</title>
-   
+
+    <!-- Links the external stylesheet used throughout the website. -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<!--Header and Main website navigation menu used to move between browser pages-->
+
+    <!-- Header containing the main website navigation. -->
     <header>
         <nav>
             <h1>Student Success Hub</h1>
-<!-- Navigation links to the main website pages-->
+
+            <!-- Main navigation links. -->
             <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Pages/about.html">About</a></li>
-    <li><a href="Pages/study-resources.html">Study Resources</a></li>
-    <li><a href="Pages/enquiry.html">Enquiry</a></li>
-    <li><a href="Pages/contact.html">Contact</a></li>
-    <li><a href="Pages/academic-calendar.html">Academic Calendar</a></li>
-    <li><a href="Pages/faq.html">FAQ</a></li>
-</ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pages/about.html">About</a></li>
+                <li><a href="Pages/study-resources.html">Study Resources</a></li>
+                <li><a href="Pages/enquiry.html">Enquiry</a></li>
+                <li><a href="Pages/contact.html">Contact</a></li>
+                <li><a href="Pages/academic-calendar.html">Academic Calendar</a></li>
+                <li><a href="Pages/faq.html">FAQ</a></li>
+            </ul>
         </nav>
     </header>
-<!--Main content of the homepage-->
+
+    <!-- Main content of the homepage. -->
     <main>
-        <!-- images introducing the student focused website-->
-    <img src="images/students.jpg" alt="Students studying" width="300" height="200">
-    
-    <img src="images/Studying.jpg" alt="Studying" width="300" height="200">
-   
-    <img src="images/learning.jpg" alt="Learning" width="300" height="200">
-    <!-- Hero section introducing student success hub-->
+
+        <!-- Responsive hero image supporting the purpose of the website. -->
+        <picture>
+            <img
+                src="images/students.jpg"
+                srcset="
+                    images/students.jpg 600w,
+                    images/students.jpg 1200w
+                "
+                sizes="(max-width: 600px) 94vw, 92vw"
+                alt="Students studying together"
+                class="hero-image">
+        </picture>
+
+        <!-- Additional supporting images. -->
+        <section class="features">
+
+            <article class="card">
+                <img
+                    src="images/Studying.jpg"
+                    alt="Student studying"
+                    class="responsive-image">
+                <h3>Focused Studying</h3>
+                <p>
+                    Create effective study habits and make use of useful
+                    learning resources.
+                </p>
+            </article>
+
+            <article class="card">
+                <img
+                    src="images/learning.jpg"
+                    alt="Students learning"
+                    class="responsive-image">
+                <h3>Effective Learning</h3>
+                <p>
+                    Explore information and learning materials that can
+                    support your academic development.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Academic Support</h3>
+                <p>
+                    Find useful information to help you manage your
+                    academic journey.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Hero section introducing Student Success Hub. -->
         <section class="hero">
             <h2>Welcome to Student Success Hub</h2>
+
             <p>
                 Your online space for study resources, academic support
                 and useful information to help you succeed in your studies.
             </p>
-<!--Link to study resources page-->
+
+            <!-- Main call-to-action link. -->
             <a href="Pages/study-resources.html" class="button">
                 Explore Study Resources
             </a>
         </section>
-<!--Introduction to the purpose of the website-->
+
+        <!-- Introduction explaining the purpose of the website. -->
         <section class="intro">
             <h2>Supporting Your Academic Journey</h2>
 
@@ -57,41 +112,56 @@
                 looking for study material or need academic guidance,
                 our website is here to support you.
             </p>
+
+            <p>
+                The website brings together study resources, academic
+                information, frequently asked questions and enquiry
+                support so that students can find useful information more
+                easily.
+            </p>
         </section>
-<!--feature cards highlighting the main services provided by the website-->
+
+        <!-- Feature cards highlighting the main services. -->
         <section class="features">
 
-            <div class="card">
+            <article class="card">
                 <h3>Study Resources</h3>
+
                 <p>
                     Find useful learning materials and resources
                     to support your studies.
                 </p>
-                <a href="Pages/study-resources.html">Learn More</a>
-            </div>
 
-            <div class="card">
+                <a href="Pages/study-resources.html">Learn More</a>
+            </article>
+
+            <article class="card">
                 <h3>Academic Support</h3>
+
                 <p>
                     Access information and guidance designed
                     to help students improve academically.
                 </p>
-                <a href="Pages/about.html">Learn More</a>
-            </div>
 
-            <div class="card">
+                <a href="Pages/about.html">Learn More</a>
+            </article>
+
+            <article class="card">
                 <h3>Student Enquiries</h3>
+
                 <p>
                     Have a question? Send us an enquiry and
-                    we will help you find the information you need.
+                    find the information you need.
                 </p>
+
                 <a href="Pages/enquiry.html">Make an Enquiry</a>
-            </div>
+            </article>
 
         </section>
 
     </main>
-<!--Website footer and copyright information-->
+
+    <!-- Website footer and copyright information. -->
     <footer>
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>

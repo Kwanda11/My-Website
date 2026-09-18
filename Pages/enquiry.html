@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-    <!-- Defines the character encoding and ensures the page is responsive on different devices. -->
+    <!-- Defines the character encoding and viewport for responsive design. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Sets the title displayed in the browser tab. -->
     <title>Student Success Hub | Enquiry</title>
+
+    <!-- Links the external stylesheet. -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- Header containing the main navigation menu for accessing the website pages. -->
+    <!-- Header containing the main website navigation. -->
     <header>
         <nav>
             <h1>Student Success Hub</h1>
 
-            <!-- Navigation links connecting the enquiry page to the other website pages. -->
+            <!-- Main navigation links. -->
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,46 +33,82 @@
         </nav>
     </header>
 
-    <!-- Main content containing the enquiry information and form. -->
+    <!-- Main content containing enquiry information and form. -->
     <main>
 
-        <!-- Image used to visually represent the study resources and purpose of the page. -->
-        <img src="images/material.jpg" alt="Study material" width="300" height="200">
+        <!-- Responsive supporting image. -->
+        <img
+            src="../images/material.jpg"
+            srcset="
+                ../images/material.jpg 600w,
+                ../images/material.jpg 1200w
+            "
+            sizes="(max-width: 600px) 94vw, 92vw"
+            alt="Study material"
+            class="hero-image">
 
-        <!-- Page introduction explaining the purpose of the enquiry page. -->
+        <!-- Page introduction. -->
         <section class="page-header">
             <h2>Student Enquiry</h2>
             <p>Have a question? Send us an enquiry.</p>
         </section>
 
-        <!-- Section containing the information and form used to submit an enquiry. -->
-        <section class="form-section">
+        <!-- Enquiry information and form. -->
+        <section class="content-section">
 
-            <h2>Student Enquiry</h2>
+            <h2>How We Can Help</h2>
 
-            <!-- Instructions explaining how students can use the enquiry form. -->
             <p>
                 Have a question or need help with your studies?
                 Complete the form below and send us your enquiry.
             </p>
 
-            <!-- Form allowing students to enter their details and submit a message. -->
+            <p>
+                You can ask about study resources, academic information,
+                website resources or other general student-related
+                questions.
+            </p>
+
+        </section>
+
+        <!-- Enquiry form. -->
+        <section class="content-section">
+
+            <h2>Send an Enquiry</h2>
+
             <form>
 
-                <!-- Text field used to collect the student's name. -->
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <label for="enquiry-name">Name:</label>
+                <input
+                    type="text"
+                    id="enquiry-name"
+                    name="name"
+                    required>
 
-                <!-- Email field used to collect the student's email address. -->
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <label for="enquiry-email">Email:</label>
+                <input
+                    type="email"
+                    id="enquiry-email"
+                    name="email"
+                    required>
 
-                <!-- Text area allowing the student to enter their enquiry message. -->
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="6" cols="40"></textarea><br><br>
+                <label for="enquiry-topic">Enquiry Topic:</label>
+                <select id="enquiry-topic" name="topic" required>
+                    <option value="">Select a topic</option>
+                    <option value="study-resources">Study Resources</option>
+                    <option value="academic-calendar">Academic Calendar</option>
+                    <option value="general">General Question</option>
+                    <option value="other">Other</option>
+                </select>
 
-                <!-- Submit button used to send the completed enquiry form. -->
-                <input type="submit" value="Submit Enquiry">
+                <label for="enquiry-message">Message:</label>
+                <textarea
+                    id="enquiry-message"
+                    name="message"
+                    rows="6"
+                    required></textarea>
+
+                <button type="submit">Submit Enquiry</button>
 
             </form>
 
@@ -77,7 +116,7 @@
 
     </main>
 
-    <!-- Footer containing the website copyright information. -->
+    <!-- Website footer. -->
     <footer>
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>

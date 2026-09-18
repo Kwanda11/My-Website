@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-    <!-- Defines the character encoding and ensures the page is responsive on different devices. -->
+    <!-- Defines the character encoding and viewport for responsive design. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Sets the title displayed in the browser tab. -->
-    <title>Business Resources</title>
+    <title>Student Success Hub | Business Resources</title>
+
+    <!-- Links the external stylesheet. -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- Header containing the main navigation menu for accessing the website pages. -->
+    <!-- Header containing the main website navigation. -->
     <header>
         <nav>
             <h1>Student Success Hub</h1>
 
-            <!-- Navigation links connecting this page to the other website pages. -->
+            <!-- Main navigation links. -->
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,41 +33,89 @@
         </nav>
     </header>
 
-    <!-- Main content containing information about business study resources. -->
+    <!-- Main business resources content. -->
     <main>
 
-        <!-- Page header introducing the purpose of the business resources page. -->
+        <!-- Page introduction. -->
         <section class="page-header">
             <h2>Business Resources</h2>
             <p>Resources to support business studies.</p>
         </section>
 
-        <!-- Content section explaining business resources and listing key topics. -->
+        <!-- Supporting image. -->
+        <img
+            src="../images/Digital.jpg"
+            srcset="
+                ../images/Digital.jpg 600w,
+                ../images/Digital.jpg 1200w
+            "
+            sizes="(max-width: 600px) 94vw, 92vw"
+            alt="Digital technology and learning"
+            class="hero-image">
+
+        <!-- Business topics. -->
         <section class="content-section">
+
             <h2>Business Topics</h2>
 
-            <!-- Brief description of the business-related learning resources. -->
             <p>
-                Explore useful information relating to business and academic studies.
+                Explore useful information relating to business
+                and academic studies.
             </p>
 
-            <!-- List of important business topics covered by the resources. -->
-            <ul>
-                <li>Business Information Systems</li>
-                <li>Business Communication</li>
-                <li>Management</li>
-                <li>Information Management</li>
-                <li>Business Processes</li>
-            </ul>
+        </section>
+
+        <!-- Business topic cards. -->
+        <section class="features">
+
+            <article class="card">
+                <h3>Business Information Systems</h3>
+                <p>
+                    Learn about how information systems can support
+                    organisations and business activities.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Business Communication</h3>
+                <p>
+                    Develop an understanding of communication used
+                    within business environments.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Management</h3>
+                <p>
+                    Explore basic management concepts and how
+                    organisations coordinate their activities.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Information Management</h3>
+                <p>
+                    Understand the importance of organising and
+                    using information effectively.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Business Processes</h3>
+                <p>
+                    Learn about activities and processes that help
+                    organisations achieve their objectives.
+                </p>
+            </article>
 
         </section>
 
     </main>
 
-    <!-- Footer containing the website copyright information. -->
+    <!-- Website footer. -->
     <footer>
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>
 
 </body>
-</html>>
+</html>

@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-    <!-- Defines the character encoding and ensures the page is responsive on different devices. -->
+    <!-- Defines the character encoding and viewport for responsive design. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Sets the title displayed in the browser tab. -->
-    <title>Programming Resources</title>
+    <title>Student Success Hub | Programming Resources</title>
+
+    <!-- Links the external stylesheet. -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- Header containing the main navigation menu for accessing the website pages. -->
+    <!-- Header containing the main website navigation. -->
     <header>
         <nav>
             <h1>Student Success Hub</h1>
 
-            <!-- Navigation links connecting this page to the other website pages. -->
+            <!-- Main navigation links. -->
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,38 +33,86 @@
         </nav>
     </header>
 
-    <!-- Main content containing information about programming resources. -->
+    <!-- Main programming resources content. -->
     <main>
 
-        <!-- Page header introducing the purpose of the programming resources. -->
+        <!-- Page introduction. -->
         <section class="page-header">
             <h2>Programming Resources</h2>
             <p>Resources to support programming studies.</p>
         </section>
 
-        <!-- Content section explaining programming and listing key topics. -->
+        <!-- Supporting image. -->
+        <img
+            src="../images/learning.jpg"
+            srcset="
+                ../images/learning.jpg 600w,
+                ../images/learning.jpg 1200w
+            "
+            sizes="(max-width: 600px) 94vw, 92vw"
+            alt="Students learning"
+            class="hero-image">
+
+        <!-- Programming introduction. -->
         <section class="content-section">
+
             <h2>Programming Topics</h2>
 
-            <!-- Explains how programming resources can support students' learning. -->
             <p>
-                Programming resources can help students understand coding concepts,
-                problem solving and software development.
+                Programming resources can help students understand
+                coding concepts, problem solving and software development.
             </p>
 
-            <!-- List of important programming concepts covered by the resources. -->
-            <ul>
-                <li>Variables and data types</li>
-                <li>Decision structures</li>
-                <li>Loops</li>
-                <li>Arrays</li>
-                <li>Methods</li>
-            </ul>
+        </section>
+
+        <!-- Programming topic cards. -->
+        <section class="features">
+
+            <article class="card">
+                <h3>Variables and Data Types</h3>
+                <p>
+                    Learn how programs store and work with different
+                    types of information.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Decision Structures</h3>
+                <p>
+                    Understand how programs make decisions using
+                    conditions.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Loops</h3>
+                <p>
+                    Learn how loops can repeat instructions efficiently
+                    within a program.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Arrays</h3>
+                <p>
+                    Explore how arrays can store multiple related
+                    values in a program.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Methods</h3>
+                <p>
+                    Learn how methods can organise reusable pieces
+                    of programming code.
+                </p>
+            </article>
+
         </section>
 
     </main>
 
-    <!-- Footer containing the website copyright information. -->
+    <!-- Website footer. -->
     <footer>
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>
