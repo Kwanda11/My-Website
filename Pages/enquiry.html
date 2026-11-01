@@ -2,25 +2,22 @@
 <html lang="en">
 
 <head>
-    <!-- Defines the character encoding and viewport for responsive design. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Sets the title displayed in the browser tab. -->
-    <title>Student Success Hub | Enquiry</title>
+    <title>Student Success Hub | Student Enquiry</title>
+    <meta name="description" content="Submit an enquiry to Student Success Hub about study resources, academic information, volunteering and sponsorship.">
+    <meta name="keywords" content="student enquiry, study resources, academic support, student success">
 
-    <!-- Links the external stylesheet. -->
     <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header containing the main website navigation. -->
     <header>
         <nav>
             <h1>Student Success Hub</h1>
-
-            <!-- Main navigation links. -->
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -33,82 +30,81 @@
         </nav>
     </header>
 
-    <!-- Main content containing enquiry information and form. -->
     <main>
 
-        <!-- Responsive supporting image. -->
         <img
             src="../images/material.jpg"
-            srcset="
-                ../images/material.jpg 600w,
-                ../images/material.jpg 1200w
-            "
-            sizes="(max-width: 600px) 94vw, 92vw"
             alt="Study material"
             class="hero-image">
 
-        <!-- Page introduction. -->
         <section class="page-header">
             <h2>Student Enquiry</h2>
             <p>Have a question? Send us an enquiry.</p>
         </section>
 
-        <!-- Enquiry information and form. -->
         <section class="content-section">
 
             <h2>How We Can Help</h2>
 
             <p>
                 Have a question or need help with your studies?
-                Complete the form below and send us your enquiry.
+                Complete the form below and submit your enquiry.
             </p>
 
             <p>
                 You can ask about study resources, academic information,
-                website resources or other general student-related
-                questions.
+                volunteering, sponsorship or other student-related questions.
             </p>
 
         </section>
 
-        <!-- Enquiry form. -->
         <section class="content-section">
 
             <h2>Send an Enquiry</h2>
 
-            <form>
+            <form id="enquiryForm">
 
-                <label for="enquiry-name">Name:</label>
+                <label for="name">Full Name:</label>
                 <input
                     type="text"
-                    id="enquiry-name"
+                    id="name"
                     name="name"
-                    required>
+                    required
+                    minlength="2"
+                    maxlength="60"
+                    placeholder="Enter your full name">
 
-                <label for="enquiry-email">Email:</label>
+                <label for="email">Email Address:</label>
                 <input
                     type="email"
-                    id="enquiry-email"
+                    id="email"
                     name="email"
-                    required>
+                    required
+                    placeholder="Enter your email address">
 
-                <label for="enquiry-topic">Enquiry Topic:</label>
-                <select id="enquiry-topic" name="topic" required>
+                <label for="topic">What are you enquiring about?</label>
+                <select id="topic" name="topic" required>
                     <option value="">Select a topic</option>
                     <option value="study-resources">Study Resources</option>
                     <option value="academic-calendar">Academic Calendar</option>
-                    <option value="general">General Question</option>
+                    <option value="sponsorship">Sponsorship</option>
+                    <option value="volunteering">Volunteering</option>
                     <option value="other">Other</option>
                 </select>
 
-                <label for="enquiry-message">Message:</label>
+                <label for="message">Your Message:</label>
                 <textarea
-                    id="enquiry-message"
+                    id="message"
                     name="message"
                     rows="6"
-                    required></textarea>
+                    required
+                    minlength="10"
+                    maxlength="1000"
+                    placeholder="Explain how we can help you..."></textarea>
 
                 <button type="submit">Submit Enquiry</button>
+
+                <p id="enquiryResponse" role="status" aria-live="polite" hidden></p>
 
             </form>
 
@@ -116,7 +112,6 @@
 
     </main>
 
-    <!-- Website footer. -->
     <footer>
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>
