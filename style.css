@@ -540,3 +540,125 @@ footer p {
     }
     
 }
+
+/* =====================================================
+   PART 3 - JAVASCRIPT FEATURES
+   ===================================================== */
+
+/* FAQ accordion */
+
+.accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid #d9e2e8;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.accordion-panel {
+    background-color: white;
+    padding: 1rem;
+}
+
+.accordion-panel p {
+    margin: 0;
+}
+
+/* Resource search */
+
+[data-resource-search] {
+    margin-top: 0.75rem;
+}
+
+/* Image gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+}
+
+/* Lightbox */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.lightbox[hidden] {
+    display: none;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.lightbox-large-image {
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    font-size: 2rem;
+    padding: 0.2rem 0.8rem;
+}
+
+/* Form responses */
+
+#enquiryResponse {
+    background-color: #e3f2fd;
+    border-left: 5px solid #1565c0;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+#enquiryResponse[hidden] {
+    display: none;
+}
+
+/* Responsive gallery */
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-image {
+        height: 200px;
+    }
+}
