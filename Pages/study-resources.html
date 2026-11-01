@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
+<script src="../script.js" defer></script>
+
 <body>
 
     <!-- Header containing the main navigation menu. -->
@@ -82,8 +84,28 @@
         <!-- Main web development topics. -->
         <section class="features">
 
+            <!-- Resource search feature. -->
+<section class="content-section">
+
+    <h2>Search Study Resources</h2>
+
+    <label for="resourceSearch">Search for a topic:</label>
+
+    <input
+        type="search"
+        id="resourceSearch"
+        data-resource-search
+        placeholder="Search HTML, CSS, programming..."
+        aria-label="Search study resources">
+
+    <p data-search-message aria-live="polite">
+        Showing all resources.
+    </p>
+
+</section>
+
             <!-- HTML resource card. -->
-            <article class="card">
+            <article class="card" data-search-item>
 
                 <h3>HTML</h3>
 
@@ -96,7 +118,7 @@
             </article>
 
             <!-- CSS resource card. -->
-            <article class="card">
+            <article class="card" data-search-item>
 
                 <h3>CSS</h3>
 
@@ -109,7 +131,7 @@
             </article>
 
             <!-- JavaScript resource card. -->
-            <article class="card">
+            <article class="card" data-search-item>
 
                 <h3>JavaScript</h3>
 
@@ -121,7 +143,7 @@
             </article>
 
             <!-- Responsive design resource card. -->
-            <article class="card">
+            <article class="card" data-search-item>
 
                 <h3>Responsive Web Design</h3>
 
@@ -134,7 +156,7 @@
             </article>
 
             <!-- Accessibility resource card. -->
-            <article class="card">
+            <article class="card" data-search-item>
 
                 <h3>Website Accessibility</h3>
 
@@ -147,7 +169,7 @@
             </article>
 
             <!-- Practice resource card. -->
-            <article class="card">
+            <article class="card" data-search-item>
 
                 <h3>Web Development Practice</h3>
 
@@ -159,7 +181,7 @@
             </article>
 
             <!-- Business resources card. -->
-            <article class="card">
+            <article class="card" data-search-item>
 
                 <h3>Business Resources</h3>
 
@@ -173,7 +195,7 @@
             </article>
 
             <!-- Programming resources card. -->
-            <article class="card">
+            <article class="card" data-search-item>
 
                 <h3>Programming Resources</h3>
 
