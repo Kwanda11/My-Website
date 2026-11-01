@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
+<script src="../script.js" defer></script>
+
 <body>
 
     <!-- Header containing the main website navigation. -->
@@ -47,43 +49,68 @@
 
         <!-- Frequently asked questions. -->
         <section class="features">
+<!-- Interactive FAQ accordion. -->
+<section class="content-section">
 
-            <article class="card">
-                <h3>What is Student Success Hub?</h3>
+    <h2>Frequently Asked Questions</h2>
 
-                <p>
-                    Student Success Hub is an online platform designed
-                    to provide students with useful study resources,
-                    academic information and support.
-                </p>
-            </article>
+    <div class="accordion-item">
+        <button type="button" class="accordion-button"
+            data-accordion-button aria-expanded="false">
+            What is Student Success Hub?
+        </button>
+        <div class="accordion-panel" hidden>
+            <p>
+                Student Success Hub is an online platform designed
+                to provide students with useful study resources,
+                academic information and support.
+            </p>
+        </div>
+    </div>
 
-            <article class="card">
-                <h3>Where can I find study resources?</h3>
+    <div class="accordion-item">
+        <button type="button" class="accordion-button"
+            data-accordion-button aria-expanded="false">
+            Where can I find study resources?
+        </button>
+        <div class="accordion-panel" hidden>
+            <p>
+                Visit the <a href="study-resources.html">Study Resources</a>
+                page to find learning materials and useful information.
+            </p>
+        </div>
+    </div>
 
-                <p>
-                    Visit the Study Resources page to find learning
-                    materials and useful information.
-                </p>
-            </article>
+    <div class="accordion-item">
+        <button type="button" class="accordion-button"
+            data-accordion-button aria-expanded="false">
+            Where can I find important academic dates?
+        </button>
+        <div class="accordion-panel" hidden>
+            <p>
+                Visit the <a href="academic-calendar.html">Academic Calendar</a>
+                page for information about assignments, tests and
+                important college events.
+            </p>
+        </div>
+    </div>
 
-            <article class="card">
-                <h3>Where can I find important academic dates?</h3>
+    <div class="accordion-item">
+        <button type="button" class="accordion-button"
+            data-accordion-button aria-expanded="false">
+            How can I contact Student Success Hub?
+        </button>
+        <div class="accordion-panel" hidden>
+            <p>
+                You can use the <a href="contact.html">Contact</a> page
+                or submit a question through the
+                <a href="enquiry.html">Enquiry</a> page.
+            </p>
+        </div>
+    </div>
 
-                <p>
-                    Visit the Academic Calendar page for information
-                    about assignments, tests and important college events.
-                </p>
-            </article>
-
-            <article class="card">
-                <h3>How can I contact Student Success Hub?</h3>
-
-                <p>
-                    You can use the Contact page or send an enquiry
-                    through the Enquiry page.
-                </p>
-            </article>
+</section>
+            
 
         </section>
 
