@@ -32,31 +32,14 @@ The website contains the following pages:
 Page| Description
 Home| Introduces Student Success Hub and provides an overview of the available resources.
 About| Provides information about the website, including its mission and vision.
-Study Resources| Provides learning information about HTML, CSS, JavaScript, responsive design and accessibility.
+Study Resources| Provides learning information and study materials.
 Business Resources| Provides information about business-related topics such as management and business processes.
 Programming Resources| Provides information about programming topics such as variables, loops, arrays and methods.
+Web Development| Provides information about HTML, CSS, JavaScript, responsive design and accessibility.
 Enquiry| Allows students to submit an enquiry.
 Contact| Provides contact information and a contact form.
 Academic Calendar| Provides information about important academic activities and dates.
 FAQ| Provides answers to frequently asked questions.
-
----
-
-# Responsive Design Testing
-
-The website was tested at desktop, tablet, and mobile screen sizes using Microsoft Edge Developer Tools.
-
-### Desktop View
-
-"Desktop View" (screenshots/desktop.png)
-
-### Tablet View
-
-"Tablet View" (screenshots/tablet.png)
-
-### Mobile View
-
-"Mobile View" (screenshots/mobile.png)
 
 ---
 
@@ -108,6 +91,7 @@ Student Success Hub/
 │   ├── study-resources.html
 │   ├── business.html
 │   ├── programming.html
+│   ├── web-development.html
 │   ├── enquiry.html
 │   ├── contact.html
 │   ├── academic-calendar.html
@@ -127,7 +111,7 @@ Student Success Hub/
 
 ---
 
-Part 1 Feedback Implemented
+# Part 1 Feedback Implemented
 
 The Part 1 website received feedback relating mainly to the use of HTML elements, the amount of website content, README documentation and references.
 
@@ -199,9 +183,9 @@ The README was expanded to provide information about:
 
 ---
 
-Part 2 - CSS Styling
+# Part 2 - CSS Styling
 
-An external stylesheet named "style.css" was created and linked to all website pages.
+An external stylesheet named "style.css" was created and linked to the website pages.
 
 The stylesheet provides a consistent design across the website.
 
@@ -362,11 +346,9 @@ The website includes:
 
 The aim is to make the website easier for different users to navigate and understand.
 
-Testing
+Responsive Design Testing
 
-The website was tested using browser Developer Tools.
-
-Testing included checking the website at different viewport sizes.
+The website was tested at desktop, tablet and mobile screen sizes using Microsoft Edge Developer Tools.
 
 The following testing sizes were used when recording the final evidence:
 
@@ -390,7 +372,19 @@ The following areas were checked:
 - Horizontal scrolling of tables.
 - Different screen sizes.
 
-Screenshots of the responsive testing are included above as evidence for Part 2.
+Screenshots of the responsive testing are included below as evidence for Part 2.
+
+Desktop View
+
+"Desktop View" (screenshots/desktop.png)
+
+Tablet View
+
+"Tablet View" (screenshots/tablet.png)
+
+Mobile View
+
+"Mobile View" (screenshots/mobile.png)
 
 ---
 
@@ -491,7 +485,7 @@ Testing included:
 
 ---
 
-GitHub Development
+# GitHub Development
 
 GitHub was used to store the project and track development.
 
@@ -514,11 +508,11 @@ Examples of descriptive commits include:
 - Improved SEO metadata across website pages.
 - Updated README documentation and references.
 
-The final GitHub repository should contain the updated HTML files, CSS stylesheet, JavaScript file, images and README.
+The final GitHub repository contains the website source files, CSS stylesheet, JavaScript file, images and README.
 
 ---
 
-Changelog
+# Changelog
 
 Part 1 Corrections
 
@@ -561,7 +555,7 @@ Part 2 Changelog
 Version 2.0 - CSS Styling
 
 - Created the external "style.css" stylesheet.
-- Linked the stylesheet to all website pages.
+- Linked the stylesheet to the website pages.
 - Added a CSS reset.
 - Added base typography styling.
 - Added a consistent colour scheme.
@@ -640,7 +634,7 @@ Version 3.2 - Interactive Map and Testing
 
 ---
 
-References
+# References
 
 The following resources were used to support the development and understanding of HTML, CSS, JavaScript, responsive design, accessibility, maps and SEO.
 
@@ -666,13 +660,19 @@ World Wide Web Consortium (W3C). (n.d.). Web Content Accessibility Guidelines (W
 
 ---
 
-GitHub Repository
+# GitHub Repository
 
 GitHub Repository:
 
 https://github.com/Kwanda11/My-Website
 
-Conclusion
+GitHub Pages Website:
+
+https://kwanda11.github.io/My-Website/
+
+---
+
+# Conclusion
 
 Student Success Hub was developed to provide students with a simple and organised platform for accessing academic and learning information.
 
