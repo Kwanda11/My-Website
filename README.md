@@ -400,4 +400,18 @@ Student Success Hub was developed to provide students with a simple and organise
 Part 2 focused on improving the website based on Part 1 feedback, implementing an external CSS stylesheet, improving the visual design, adding responsive layouts and documenting the development process.
 The website is designed to provide a consistent experience across desktop, tablet and mobile screen sizes.
 
+### Part 3 – Functionality and SEO
+
+- Added JavaScript functionality.
+- Implemented an interactive FAQ accordion.
+- Added study resource search functionality.
+- Created an image gallery with a lightbox.
+- Added enquiry form validation and responses.
+- Added contact form validation and email preparation.
+- Improved SEO titles, descriptions and keywords.
+- Improved image alternative text.
+- Added an interactive Gqeberha map.
+- Created robots.txt and sitemap.xml.
+- Tested website functionality and responsiveness.
+
 
