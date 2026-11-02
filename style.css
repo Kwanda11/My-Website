@@ -438,6 +438,10 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+
     nav ul {
         gap: 0.3rem;
     }
