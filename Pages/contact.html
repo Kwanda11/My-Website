@@ -11,6 +11,11 @@
 
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js" defer></script>
+
+    <link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+
 </head>
 
 <body>
@@ -77,6 +82,12 @@
                 will open with your message prepared for sending.
             </p>
 
+            <section class="content-section">
+    <h2>Find Us in Gqeberha</h2>
+    <p>Explore the Gqeberha area using the interactive map.</p>
+    <div id="map" style="height: 400px;"></div>
+</section>
+
             <form id="contactForm">
 
                 <label for="name">Full Name:</label>
@@ -128,5 +139,19 @@
         <p>&copy; 2026 Student Success Hub. All rights reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+const map = L.map('map').setView([-33.9608, 25.6022], 12);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+L.marker([-33.9608, 25.6022])
+    .addTo(map)
+    .bindPopup('Gqeberha area')
+    .openPopup();
+</script>
 </body>
 </html>
